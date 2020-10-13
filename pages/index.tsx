@@ -20,7 +20,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Footer />
       <div className="content">
         <div className="cards">
           <Card image="../images/cards/leap.jpg" page="#" />
@@ -28,6 +27,7 @@ export default function Home() {
           <Card image="../images/cards/projects.jpg" page="projects" />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
