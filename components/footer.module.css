@@ -26,10 +26,19 @@
 }
 
 .icon {
+  text-align: center;
   margin: 0rem 0.5rem;
+  border: 0.1rem solid white;
+  border-radius: 0.2rem;
+  width: 32px;
+  height: 32px;
+}
+
+.icon a {
+  font-size: 1.5rem;
 }
 
 .icon:hover {
-  transform: scale(0.9);
-  color: lightskyblue;
+  color: black;
+  background-color: white;
 }
