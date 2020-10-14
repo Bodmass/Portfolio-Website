@@ -10,10 +10,7 @@ function MenuBar() {
   }
   return (
     <div className={styles.menubar}>
-      {/* <div className={styles.active}> */}
       <MenuBarButton link="..">Home</MenuBarButton>
-      {/* </div> */}
-      <MenuBarButton link="projects">Projects</MenuBarButton>
       <MenuBarButton link="#">About</MenuBarButton>
     </div>
   )
