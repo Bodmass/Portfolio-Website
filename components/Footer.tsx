@@ -11,7 +11,7 @@ function FooterList() {
   }
   return (
     <div className={styles.icons}>
-      <FooterIcon link="https://twitter.com/bodmass">
+      <FooterIcon link="https://twitter.com/bodmassad">
         <FaTwitter />
       </FooterIcon>
       <FooterIcon link="https://github.com/bodmass">
