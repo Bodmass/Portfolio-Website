@@ -32,6 +32,9 @@
   border-radius: 0.2rem;
   width: 32px;
   height: 32px;
+  color: black;
+  background-color: white;
+  transition: transform 0.2s ease-in-out;
 }
 
 .icon a {
@@ -39,6 +42,7 @@
 }
 
 .icon:hover {
-  color: black;
-  background-color: white;
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
 }
