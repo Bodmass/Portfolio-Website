@@ -21,7 +21,13 @@ a {
 hr {
   border: 0;
   border-bottom: solid 1px rgba(255, 255, 255, 0.15);
-  margin: 2em 0;
+}
+
+.aboutme {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  width: 100%;
 }
 
 .content {
@@ -52,6 +58,7 @@ hr {
   margin: 1rem 1rem 1rem 1rem;
   user-select: none;
   justify-content: center;
+  transition: transform 0.2s ease-in-out;
 }
 
 .cardimg {
@@ -62,12 +69,17 @@ hr {
   background-color: #0a0a0a;
 }
 
+.card:hover {
+  transform: scale(1.05);
+  filter: brightness(115%);
+}
+
 .cardimg,
 .cardcontent {
   border: 0.1rem solid rgba(255, 255, 255, 0.25);
 }
 
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 1300px) {
   .card {
     flex: 0 0 400px;
   }
