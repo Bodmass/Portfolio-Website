@@ -77,7 +77,7 @@ export default function Home() {
               <li>Import your own tiles to be used in the generated level</li>
             </ul>
           </Card>
-          <Card image="../images/cards/ffxivsssdps.jpg" page="">
+          <Card image="../images/cards/ffxivsssdps.jpg" page="https://ffxiv.azizarar.com">
             <p>FFXIV App: React, Javascript</p>
             <ul>
               <li>Calculates DPS based on Stone Sky and Sea attempts</li>
