@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <hr />
         <div className="cards">
-          <Card image="../images/cards/leap.jpg" page="#">
+          <Card image="../images/cards/leap.jpg" page="leap">
             <p>Game Project: C#, Unity</p>
             <ul>
               <li>2D Action RPG</li>
@@ -47,7 +47,7 @@ export default function Home() {
             </ul>
           </Card>
 
-          <Card image="../images/cards/snakegame.jpg" page="">
+          <Card image="../images/cards/snakegame.jpg" page="sfmlsnake">
             <p>Game Project: C++, SFML</p>
             <ul>
               <li>2 Player Snake Game</li>
@@ -55,7 +55,7 @@ export default function Home() {
               <li>Gather glue to freeze yourself tactically to kill the enemy snake!</li>
             </ul>
           </Card>
-          <Card image="../images/cards/hapivania.jpg" page="">
+          <Card image="../images/cards/hapivania.jpg" page="hapivania">
             <p>Game Engine: C++, HAPI</p>
             <p>Level Editor: C#, WPF</p>
             <ul>
@@ -65,7 +65,7 @@ export default function Home() {
             </ul>
           </Card>
 
-          <Card image="../images/cards/tilemapgenerator.jpg" page="">
+          <Card image="../images/cards/tilemapgenerator.jpg" page="tilemapgenerator">
             <p>Unity Plugin: C#, Unity</p>
             <ul>
               <li>2D Level Generator</li>
