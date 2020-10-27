@@ -11,7 +11,7 @@ function MenuBar() {
   return (
     <div className={styles.menubar}>
       <MenuBarButton link="..">Home</MenuBarButton>
-      <MenuBarButton link="#">About</MenuBarButton>
+      <MenuBarButton link="aboutme">About</MenuBarButton>
     </div>
   )
 }
