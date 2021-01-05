@@ -64,13 +64,17 @@ export default function Home() {
           <p />
           <p>
             <b>
-              <a href="https://www.dropbox.com/s/ox8q7ezyt7bf2t1/AzEngine.zip?dl=0">Download AzEngine Source</a>
+              <a href="https://github.com/Bodmass/HAPIVANIA-GameEngine">
+                https://github.com/Bodmass/HAPIVANIA-GameEngine
+              </a>
             </b>
           </p>
 
           <p>
             <b>
-              <a href="https://www.dropbox.com/s/yxotvvtgzmf2pr0/AzEditor.zip?dl=0">Download AzEditor Source</a>
+              <a href="https://github.com/Bodmass/HAPIVANIA_LevelEditor">
+                https://github.com/Bodmass/HAPIVANIA_LevelEditor
+              </a>
             </b>
           </p>
           <p>
