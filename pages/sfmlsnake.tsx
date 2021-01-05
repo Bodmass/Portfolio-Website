@@ -41,7 +41,7 @@ export default function Home() {
 
           <p>
             <b>
-              <a href="https://www.dropbox.com/s/7zqdewnbds9lt7z/Aziz%20Snake.zip?dl=0">Download Snake (Source)</a>
+              <a href="https://github.com/Bodmass/SnakeGame">https://github.com/Bodmass/SnakeGame</a>
             </b>
           </p>
         </div>

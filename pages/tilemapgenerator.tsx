@@ -60,9 +60,7 @@ export default function Home() {
           </ul>
           <p>
             <b>
-              <a href="https://www.dropbox.com/s/f6fdktp0t9ejqky/Aziz%20Arar%20Unity%20Tilemap%20Generator.zip?dl=0">
-                Download Tilemap Generator Source
-              </a>
+              <a href="https://github.com/Bodmass/TilemapGenerator">https://github.com/Bodmass/TilemapGenerator</a>
             </b>
           </p>
         </div>
