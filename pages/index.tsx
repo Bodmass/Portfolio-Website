@@ -84,6 +84,13 @@ export default function Home() {
               <li>Select Boss Fights from Shadowbringers and Legacy</li>
             </ul>
           </Card>
+          <Card image="../images/cards/gourvid.jpg" page="gourvid">
+            <p>Gourvid</p>
+            <ul>
+              <li>Created Website for Gourvid</li>
+              <li>Collaberated with a Designer to bring their vision to life</li>
+            </ul>
+          </Card>
         </div>
       </div>
       <Footer />
