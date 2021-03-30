@@ -340,7 +340,7 @@ export default function Home() {
             </video>
           </p>
           <p>
-            <b>Gourvid is Still Under Development</b>
+            <b>Gourvid is Still Under Development. This Page is a Work In Progress</b>
           </p>
         </div>
       </div>
