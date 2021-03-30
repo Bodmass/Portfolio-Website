@@ -237,10 +237,7 @@ export default function Home() {
               </li>
               <li>Having your strong headline as your very first H1 tag.</li>
               <li>Meta description</li>
-              <li>
-                Alt attributes in images to explain what they are (These bots don’t have eyes) Segmented, logical
-                structure of the URL, being short and descriptive. Images
-              </li>
+              <li>Alt attributes in images to explain what they are (These bots don’t have eyes)</li>
               <li>Segmented, logical structure of the URL, being short and descriptive.</li>
             </ol>
           </p>
