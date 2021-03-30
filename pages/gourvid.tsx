@@ -23,6 +23,7 @@ export default function Home() {
             Gourvid:
             <ul>
               <li>Wordpress</li>
+              <li>Javascript</li>
               <li>PHP</li>
               <li>CSS</li>
             </ul>
@@ -202,11 +203,11 @@ export default function Home() {
               <li>Android Browser (v5.6.x+)</li>
               <li>Samsung Internet (v8.2+)</li>
               <li>Unlisted Browsers may support the website but it is not guaranteed.</li>
-              See here for Browser Support for Wordpress
-              <a href="https://make.wordpress.org/core/handbook/best-practices/browser-support/">
-                https://make.wordpress.org/core/handbook/best-practices/browser-support/
-              </a>
             </ul>
+            See here for Browser Support for Wordpress
+            <a href="https://make.wordpress.org/core/handbook/best-practices/browser-support/">
+              <b> https://make.wordpress.org/core/handbook/best-practices/browser-support/</b>
+            </a>
           </p>
           <h3>Fonts</h3>
           <p>
