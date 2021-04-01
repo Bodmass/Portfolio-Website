@@ -88,7 +88,7 @@ export default function Home() {
             <p>Gourvid</p>
             <ul>
               <li>Created Website for Gourvid</li>
-              <li>Collaberated with a Designer to bring their vision to life</li>
+              <li>Collaborated with a Designer to bring their vision to life</li>
             </ul>
           </Card>
         </div>
