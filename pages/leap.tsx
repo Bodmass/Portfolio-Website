@@ -19,7 +19,7 @@ export default function Home() {
           <p>
             Leap:
             <ul>
-              <li>C++</li>
+              <li>C#</li>
               <li>Unity</li>
             </ul>
           </p>
