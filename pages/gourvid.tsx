@@ -295,6 +295,12 @@ export default function Home() {
           </p>
           <p>Here are some favicons I’ve created and how they look before and after.</p>
           <img className="vidembed" src="/images/previews/gourvid/gourvid12.jpg" alt="" />
+          <p>
+            We ended up with going with the full grape. Which is an edited version of one of Lauryn&apos;s Logo Concepts
+          </p>
+          <p>
+            <img className="vidembed" width="36" src="/images/previews/gourvid/grapeR.png" alt="" />
+          </p>
           <h2>Website Development</h2>
           <p>
             The way Wordpress works, is that all the pages are stored in the database. This means the creation of the
@@ -315,7 +321,7 @@ export default function Home() {
             the best way to achieve the desired goals.
           </p>
           <p>
-            Using the Wordpress Page Builder gives a friendly user interface to create pages, so those without coding
+            Using a Wordpress Page Builder gives a friendly user interface to create pages, so those without coding
             experience can create a website. This is necessary as the company needs to be able to maintain the website
             without us.
           </p>
@@ -323,7 +329,10 @@ export default function Home() {
           <video className="vidembed" autoPlay muted loop>
             <source src="/images/previews/gourvid/gourvid13.mp4" type="video/mp4" />
           </video>
-          <p>Some Previews of the Menu Bar</p>
+          <p>
+            The Content of the Menu Bar is created directly in Wordpress. Using some PHP, we can have the menu bar
+            generate in the Header. With some CSS, I managed to create the menu bar based on our designs.
+          </p>
           <p>Desktop:</p>
           <p>
             <video className="vidembed" autoPlay muted loop>
@@ -335,6 +344,28 @@ export default function Home() {
             <video className="vidembed" autoPlay muted loop>
               <source src="/images/previews/gourvid/gourvid15.mp4" type="video/mp4" />
             </video>
+          </p>
+          <p>
+            I also implemented a small &quot;Let&apos;s Chat&quot; button on the bottom right of the Home Page. This
+            would bring up a fake WhatsApp chat, which when pressed would open up a direct link to their WhatsApp.
+          </p>
+          <p>
+            <video className="vidembed" autoPlay muted loop>
+              <source src="/images/previews/gourvid/gourvid16.mp4" type="video/mp4" />
+            </video>
+          </p>
+          <p>I created the footer based on the design from our Adobe XD document.</p>
+          <p>
+            <img className="vidembed" src="/images/previews/gourvid/gourvid17.jpg" alt="" />
+          </p>
+          <p>
+            To achieve this look, I needed to create 2 flexboxes. One for the content of the footer, and one for the
+            copyright notice. The first flexbox contained 4 other flexboxes. Check below the breakdown of the flexboxes,
+            including the flex direction for each flexbox to achieve the desired look.
+          </p>
+          <p>
+            <img className="vidembed" src="/images/previews/gourvid/gourvid18.jpg" alt="" />
+            *changes to Column based on resolution for Mobile and Tablet support.
           </p>
           <p>
             <b>Gourvid is Still Under Development. This Page is a Work In Progress</b>
