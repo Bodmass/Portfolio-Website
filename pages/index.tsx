@@ -38,6 +38,20 @@ export default function Home() {
               <li>Wield a time-altering polearm artifact to view the events of the Great Levian War</li>
             </ul>
           </Card>
+          <Card image="../images/cards/ffxivsssdps.jpg" page="https://ffxiv.azizarar.com">
+            <p>FFXIV App: React, Javascript</p>
+            <ul>
+              <li>Calculates DPS based on Stone Sky and Sea attempts</li>
+              <li>Select Boss Fights from Shadowbringers and Legacy</li>
+            </ul>
+          </Card>
+          <Card image="../images/cards/gourvid.jpg" page="gourvid">
+            <p>Gourvid</p>
+            <ul>
+              <li>Created Website for Gourvid</li>
+              <li>Collaborated with a Designer to bring their vision to life</li>
+            </ul>
+          </Card>
           <Card image="../images/cards/ld45.jpg" page="https://bodmassad.itch.io/ld45">
             <p>Game Project: C#, Unity</p>
             <ul>
@@ -75,20 +89,6 @@ export default function Home() {
               </li>
               <li>Generate foliage and foliage density.</li>
               <li>Import your own tiles to be used in the generated level</li>
-            </ul>
-          </Card>
-          <Card image="../images/cards/ffxivsssdps.jpg" page="https://ffxiv.azizarar.com">
-            <p>FFXIV App: React, Javascript</p>
-            <ul>
-              <li>Calculates DPS based on Stone Sky and Sea attempts</li>
-              <li>Select Boss Fights from Shadowbringers and Legacy</li>
-            </ul>
-          </Card>
-          <Card image="../images/cards/gourvid.jpg" page="gourvid">
-            <p>Gourvid</p>
-            <ul>
-              <li>Created Website for Gourvid</li>
-              <li>Collaborated with a Designer to bring their vision to life</li>
             </ul>
           </Card>
         </div>
