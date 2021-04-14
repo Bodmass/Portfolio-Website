@@ -28,7 +28,7 @@ export default function Home() {
             <ul>
               I also have experience in the other areas such as:
               <li>Music</li>
-              <li>Pixel Art (Using Asperite and Krita)</li>
+              <li>Pixel Art (Using Asperite and Photoshop)</li>
               <li>3D Modelling</li>
             </ul>
           </p>
