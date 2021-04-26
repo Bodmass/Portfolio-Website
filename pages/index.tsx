@@ -45,6 +45,14 @@ export default function Home() {
               <li>Select Boss Fights from Shadowbringers and Legacy</li>
             </ul>
           </Card>
+          <Card image="../images/cards/ld48.jpg" page="https://bodmassad.itch.io/ld48">
+            <p>Game Project: C#, Unity</p>
+            <ul>
+              <li>Game Jam: Ludum Dare 48</li>
+              <li>Theme: Deeper and Deeper</li>
+              <li>Go deeper into a trapped dream to find your way out.</li>
+            </ul>
+          </Card>
           <Card image="../images/cards/gourvid.jpg" page="gourvid">
             <p>Gourvid</p>
             <ul>
@@ -52,6 +60,7 @@ export default function Home() {
               <li>Collaborated with a Designer to bring their vision to life</li>
             </ul>
           </Card>
+
           <Card image="../images/cards/ld45.jpg" page="https://bodmassad.itch.io/ld45">
             <p>Game Project: C#, Unity</p>
             <ul>
