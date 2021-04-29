@@ -53,6 +53,14 @@ export default function Home() {
               <li>Go deeper into a trapped dream to find your way out.</li>
             </ul>
           </Card>
+          <Card image="../images/cards/guildy.jpg " page="https://guildywow.herokuapp.com/">
+            <p>Guildy App: React, Javascript</p>
+            <ul>
+              <li>Login with Battle.net</li>
+              <li>View your Guilds Calendar</li>
+              <li>This is a Work in Progress!</li>
+            </ul>
+          </Card>
           <Card image="../images/cards/gourvid.jpg" page="gourvid">
             <p>Gourvid</p>
             <ul>
