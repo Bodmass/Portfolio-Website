@@ -45,6 +45,15 @@ export default function Home() {
               <li>Select Boss Fights from Shadowbringers and Legacy</li>
             </ul>
           </Card>
+          <Card image="../images/cards/ffxivbluspellbook.jpg" page="https://blu.azizarar.com">
+            <p>BLU Spellbook: React, Javascript</p>
+            <ul>
+              <li>Record collection of Blue Mage spells.</li>
+              <li>Find location of missing spells.</li>
+              <li>Share progress with friends (NYI)</li>
+              <li>This is a Work in Progress!</li>
+            </ul>
+          </Card>
           <Card image="../images/cards/ld48.jpg" page="https://bodmassad.itch.io/ld48">
             <p>Game Project: C#, Unity</p>
             <ul>
