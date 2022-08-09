@@ -54,6 +54,14 @@ export default function Home() {
               <li>This is a Work in Progress!</li>
             </ul>
           </Card>
+          <Card image="../images/cards/ld50.jpg" page="https://bodmassad.itch.io/ld50">
+            <p>Game Project: GDScript, Godot</p>
+            <ul>
+              <li>Game Jam: Ludum Dare 50</li>
+              <li>Theme: Delay the Inevitable</li>
+              <li>A drag queen finds herself in the apocalypse.</li>
+            </ul>
+          </Card>
           <Card image="../images/cards/ld48.jpg" page="https://bodmassad.itch.io/ld48">
             <p>Game Project: C#, Unity</p>
             <ul>
