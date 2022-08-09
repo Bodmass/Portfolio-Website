@@ -17,6 +17,9 @@ export default function Home() {
         <hr />
         <div className="pagecontent">
           <p>
+            <i>Development is on pause</i>
+          </p>
+          <p>
             Leap:
             <ul>
               <li>C#</li>

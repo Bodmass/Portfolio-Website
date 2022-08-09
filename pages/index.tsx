@@ -30,14 +30,14 @@ export default function Home() {
         </div>
         <hr />
         <div className="cards">
-          <Card image="../images/cards/leap.jpg" page="leap">
+          {/* <Card image="../images/cards/leap.jpg" page="leap">
             <p>Game Project: C#, Unity</p>
             <ul>
               <li>2D Action RPG</li>
               <li>Imbue the power of various elements with the help of Fairies you meet</li>
               <li>Wield a time-altering polearm artifact to view the events of the Great Levian War</li>
             </ul>
-          </Card>
+          </Card> */}
           <Card image="../images/cards/ffxivsssdps.jpg" page="https://ffxiv.azizarar.com">
             <p>FFXIV App: React, Javascript</p>
             <ul>
