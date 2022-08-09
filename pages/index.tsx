@@ -30,14 +30,14 @@ export default function Home() {
         </div>
         <hr />
         <div className="cards">
-          <Card image="../images/cards/leap.jpg" page="leap">
+          {/* <Card image="../images/cards/leap.jpg" page="leap">
             <p>Game Project: C#, Unity</p>
             <ul>
               <li>2D Action RPG</li>
               <li>Imbue the power of various elements with the help of Fairies you meet</li>
               <li>Wield a time-altering polearm artifact to view the events of the Great Levian War</li>
             </ul>
-          </Card>
+          </Card> */}
           <Card image="../images/cards/ffxivsssdps.jpg" page="https://ffxiv.azizarar.com">
             <p>FFXIV App: React, Javascript</p>
             <ul>
@@ -52,6 +52,14 @@ export default function Home() {
               <li>Find location of missing spells.</li>
               <li>Share progress with friends (NYI)</li>
               <li>This is a Work in Progress!</li>
+            </ul>
+          </Card>
+          <Card image="../images/cards/ld50.jpg" page="https://bodmassad.itch.io/ld50">
+            <p>Game Project: GDScript, Godot</p>
+            <ul>
+              <li>Game Jam: Ludum Dare 50</li>
+              <li>Theme: Delay the Inevitable</li>
+              <li>A drag queen finds herself in the apocalypse.</li>
             </ul>
           </Card>
           <Card image="../images/cards/ld48.jpg" page="https://bodmassad.itch.io/ld48">
