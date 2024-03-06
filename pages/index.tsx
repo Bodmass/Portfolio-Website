@@ -70,7 +70,7 @@ export default function Home() {
               <li>Go deeper into a trapped dream to find your way out.</li>
             </ul>
           </Card>
-          <Card image="../images/cards/guildy.jpg " page="https://guildywow.herokuapp.com/">
+          <Card image="../images/cards/guildy.jpg " page="https://guildy.azizarar.com/">
             <p>Guildy App: React, Javascript</p>
             <ul>
               <li>Login with Battle.net</li>
