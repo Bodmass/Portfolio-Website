@@ -4,7 +4,11 @@ import { faBluesky, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icon
 import Link from 'next/link'
 
 function Socials() {
-  function SocialIcon({ children, link }) {
+  type SocialIconProps = {
+    children: React.ReactNode
+    link: string
+  }
+  function SocialIcon({ children, link }: SocialIconProps) {
     return (
       <div className="me-2 inline-flex h-8 min-w-10 items-center justify-center rounded-lg p-2.5 text-center text-xl font-medium hover:scale-90 hover:bg-blue-400 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800">
         <Link href={link}>{children}</Link>
