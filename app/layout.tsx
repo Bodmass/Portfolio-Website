@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Delius_Swash_Caps, Teko } from 'next/font/google'
+import { Geist, Geist_Mono, Delius_Swash_Caps, Teko, Roboto } from 'next/font/google'
 import './globals.css'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -22,9 +22,15 @@ const deliusSwash = Delius_Swash_Caps({
   subsets: ['latin'],
 })
 
-const kalam = Teko({
-  variable: '--font-kalam',
+const teko = Teko({
+  variable: '--font-teko',
   weight: '400',
+  subsets: ['latin'],
+})
+
+const roboto = Roboto({
+  variable: '--font-roboto',
+  weight: '900',
   subsets: ['latin'],
 })
 
@@ -41,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${deliusSwash.variable} ${kalam.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${deliusSwash.variable} ${teko.variable} ${roboto.variable} antialiased`}
       >
         {children}
       </body>

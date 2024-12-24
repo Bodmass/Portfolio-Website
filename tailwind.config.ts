@@ -14,7 +14,8 @@ export default {
       },
       fontFamily: {
         delius: ['var(--font-delius-swash)'],
-        kalam: ['var(--font-kalam)'],
+        teko: ['var(--font-teko)'],
+        roboto: [`var(--font-roboto)`],
       },
       animation: {
         border: 'background ease infinite',
