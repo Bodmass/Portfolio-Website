@@ -4,14 +4,14 @@ export const PROJECTS = [
   {
     page: 'https://ffxiv.azizarar.com',
     title: 'Stone Sky Sea DPS Calculator',
-    logo: '/cards/ssslogo.png',
+    logo: '/projects/ffxiv-sss/ssslogo.png',
     techstack: ['Next.js', 'Typescript'],
     bgCol: '#000000',
   },
   {
     page: 'https://blu.azizarar.com',
     title: 'BLU Spellbook',
-    logo: '/cards/blulogo.png',
+    logo: '/projects/ffxiv-blu/blulogo.png',
     techstack: ['Next.js', 'Typescript', 'Work in Progress'],
     bgCol: '#000000',
   },
