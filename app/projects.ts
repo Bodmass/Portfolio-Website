@@ -1,4 +1,4 @@
-import { faUnity, faWindows } from '@fortawesome/free-brands-svg-icons'
+// import { faUnity, faWindows } from '@fortawesome/free-brands-svg-icons'
 
 export const PROJECTS = [
   {
