@@ -19,11 +19,13 @@ const geistMono = Geist_Mono({
 const deliusSwash = Delius_Swash_Caps({
   variable: '--font-delius-swash',
   weight: '400',
+  subsets: ['latin'],
 })
 
 const kalam = Teko({
   variable: '--font-kalam',
   weight: '400',
+  subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
