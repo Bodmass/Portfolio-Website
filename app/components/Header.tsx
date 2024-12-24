@@ -49,15 +49,19 @@ export default function Header() {
       </div>
       <div className="pb-2">
         <div className="flex justify-center space-x-4">
-          <a href="/" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">
+          <Link
+            href="/"
+            className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+            aria-current="page"
+          >
             Projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
             About Me
-          </a>
+          </Link>
         </div>
       </div>
     </div>
