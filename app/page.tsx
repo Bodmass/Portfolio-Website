@@ -28,7 +28,7 @@ const Project: NextPage<ProjectProps> = ({ logo, page, title, techstack, bgImg, 
   return (
     <Link
       href={page}
-      className={`flex w-full -skew-x-12 ${bgImg ? `bg-center bg-cover` : `bg-gradient-to-b`} select-none flex-col rounded-3xl  from-white to-[#c0d3fb] p-1 pb-2 shadow-2xl drop-shadow-xl transition-all duration-300 ease-in-out hover:scale-105 hover:ring-4 dark:border-black/50  dark:from-[#1c2f58]/25 dark:to-[#262f4a]/25  dark:hover:bg-gray-900`}
+      className={`flex w-full -skew-x-12 ${bgImg ? `bg-center bg-cover` : `bg-gradient-to-b`} select-none flex-col rounded-3xl  from-white to-[#c0d3fb] p-1 pb-2 shadow-2xl drop-shadow-xl transition-all duration-100 ease-in-out hover:scale-105 hover:ring-4 dark:border-black/50  dark:from-[#1c2f58]/25 dark:to-[#262f4a]/25  dark:hover:bg-gray-900`}
     >
       <div
         className="rounded-3xl absolute top-0 left-0 w-full h-full bg-cover bg-center"
