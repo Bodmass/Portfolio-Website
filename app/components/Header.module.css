@@ -1,0 +1,18 @@
+.link,
+.current {
+  border-radius: 12px;
+  color: #fff;
+  padding: 5px 16px;
+  background-color: #0f131f00;
+  transition: background-color 200ms linear;
+}
+
+/* Apply to the current/active nav item */
+.current {
+  background-color: #0f131f;
+  color: #fff;
+}
+
+.link:hover {
+  background-color: #0f131f83;
+}
