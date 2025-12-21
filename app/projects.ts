@@ -27,15 +27,6 @@ export const typeLabels: { [key in ProjectProps['type']]: string } = {
 
 export const PROJECTS: ProjectProps[] = [
   {
-    page: 'https://bodmassad.itch.io/ld45',
-    title: 'Brainwave',
-    bgImg: '/projects/brainwave/bw_bg.jpg',
-    logo: '/projects/brainwave/ld45_logo.png',
-    techstack: ['Unity', 'Game Jam', 'Ludum Dare 45'],
-    status: 'released',
-    type: 'Game',
-  },
-  {
     page: 'https://ffxiv.azizarar.com',
     title: 'Stone Sky Sea DPS Calculator',
     logo: '/projects/ffxiv-sss/ssslogo.png',

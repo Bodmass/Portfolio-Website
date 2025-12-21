@@ -1,7 +1,13 @@
+'use client'
+
 import { NextPage } from 'next'
 import Link from 'next/link'
 import { PROJECTS, ProjectProps, statusLabels, typeLabels } from './projects'
 import Image from 'next/image'
+import { useState, Dispatch, SetStateAction, ReactNode } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBorderAll, faGamepad, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 
 const Project: NextPage<ProjectProps> = (props: ProjectProps) => {
   function getColours(tech: string) {
@@ -16,40 +22,58 @@ const Project: NextPage<ProjectProps> = (props: ProjectProps) => {
         return 'dark:bg-white dark:text-black bg-black text-white'
     }
   }
+  const shouldReduceMotion = useReducedMotion()
+
   return (
     <Link
       href={props.page}
-      className={`group flex w-150 -skew-x-12 ${props.bgImg ? `bg-center bg-cover` : `bg-linear-to-b`} select-none flex-col rounded-3xl pb-2 focus:outline-hidden bg-black/25`}
+      aria-label={`View project: ${props.title}`}
+      className="
+        group flex w-150 -skew-x-12 select-none
+        flex-col rounded-3xl bg-black/25 hover:drop-shadow-2xl transition-shadow"
     >
-      <div className="from-white to-[#c0d3fb] dark:border-black/50  dark:from-[#1c2f58]/25 dark:to-[#262f4a]/25  dark:group-hover:bg-gray-900 transition-all duration-200 ease-in rounded-3xl group-hover:-translate-y-2 group-focus:-translate-y-2 ring-blue-600 group-hover:ring-4 group-focus:ring-4 ">
+      <motion.div
+        className="relative overflow-hidden rounded-3xl  group-hover: ring-blue-400 group-hover:ring-4 "
+        whileHover={!shouldReduceMotion ? { y: -8 } : undefined}
+        whileFocus={!shouldReduceMotion ? { y: -8 } : undefined}
+        transition={{
+          type: 'spring',
+          stiffness: 300,
+          damping: 20,
+        }}
+      >
         <div
-          className="rounded-3xl absolute w-full h-full bg-cover bg-center group-hover:blur-[2px]"
+          className="absolute inset-0 rounded-3xl bg-cover bg-center blur-[1px]"
+          aria-hidden="true"
           style={{
             backgroundImage: props.bgImg
               ? `linear-gradient(var(--button-top), var(--button-bottom)), url(${props.bgImg})`
               : '',
-            backgroundColor: props.bgCol ? `${props.bgCol}` : '',
+            backgroundColor: props.bgCol || '',
           }}
-        ></div>
-        <div className="px-2 py-1">
+        />
+
+        <div className="relative px-2 py-1">
           <div className="skew-x-12 pl-6">
-            <p className=" font-teko text-3xl sm:text-2xl text-white text-shadow-black text-shadow-xl">{props.title}</p>
+            <p className="font-teko text-3xl sm:text-2xl text-white">{props.title}</p>
           </div>
-          <div className="relative w-full h-32">
+
+          <div className="relative w-full h-32 select-none ">
             <Image
+              draggable={false}
               src={props.logo}
               alt={`${props.title} logo`}
               fill
-              className="object-contain w-full h-auto skew-x-12 p-2 "
+              className="object-contain skew-x-12 p-2 "
             />
           </div>
 
-          <div className="skew-x-12 flex w-full justify-between pr-6 ">
+          <div className="skew-x-12 flex w-full justify-between pr-6">
             <div>
               {props.techstack.map((tech: string, index: number) => (
                 <span
-                  className={`font-roboto ml-2 rounded-md px-2 py-1 text-xs text-nowrap ring-2 ring-black/25 ${getColours(tech)}`}
                   key={index}
+                  className={`ml-2 rounded-md px-2 py-1 text-xs ring-2 ring-black/25 ${getColours(tech)}`}
                 >
                   {tech}
                 </span>
@@ -57,8 +81,42 @@ const Project: NextPage<ProjectProps> = (props: ProjectProps) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Link>
+  )
+}
+
+const Filters = ({ filter, setFilter }: { filter: string; setFilter: Dispatch<SetStateAction<string>> }) => {
+  type FilterIconProps = {
+    children: ReactNode
+    filterName: string
+  }
+  function FilterIcon({ children, filterName: filterName }: FilterIconProps) {
+    return (
+      <div
+        className={`${filterName == filter ? `bg-[#293451]` : `bg-transparent`} inline-flex select-none rounded-2xl m-2 font-roboto h-8 min-w-10 items-center p-2.5 text-center text-md font-medium hover:bg-blue-400 hover:text-white focus:outline-hidden cursor-pointer focus:ring-4 focus:ring-blue-300 dark:border-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800`}
+      >
+        <a onClick={() => setFilter(filterName)}> {children} </a>
+      </div>
+    )
+  }
+  return (
+    <div className="w-full flex justify-center ">
+      <div className="mt-2 bg-[#121723] w-fit rounded-3xl">
+        <FilterIcon filterName="">
+          <FontAwesomeIcon icon={faBorderAll} className="fa-fw" />
+          <span>ALL</span>
+        </FilterIcon>
+        <FilterIcon filterName="WEB">
+          <FontAwesomeIcon icon={faGlobe} className="fa-fw" />
+          <span>WEB</span>
+        </FilterIcon>
+        <FilterIcon filterName="GAME">
+          <FontAwesomeIcon icon={faGamepad} className="fa-fw flex" />
+          <span>GAMES</span>
+        </FilterIcon>
+      </div>
+    </div>
   )
 }
 
@@ -71,24 +129,32 @@ export default function Home() {
     return acc
   }, {})
 
+  const [filter, setFilter] = useState('')
+  const filteredProjects = PROJECTS.filter((project) => project.type.toUpperCase().includes(filter))
+
   return (
-    <div className="flex justify-center font-(family-name:--font-geist-sans)">
-      {/* Projects */}
-      <div className="mb-24 flex flex-col px-3 md:px-12 lg:w-3/4">
-        {Object.keys(groupedProjects).map((projectType) => (
-          <div key={projectType}>
-            <div className="flex min-h-12 items-center justify-center">
-              <div className="p-2 w-full select-none xl:w-1/2 dark:border-sky-600/ my-2 rounded-lg flex min-h-12 items-center justify-center bg-linear-to-b font-teko text-2xl dark:from-sky-500 dark:to-sky-500/50">
-                {typeLabels[projectType as keyof typeof typeLabels]}
-              </div>
-            </div>
-            <div className="flex flex-row flex-wrap justify-center gap-6 px-6 py-2 xl:grid-cols-3 md:grid-cols-2">
-              {groupedProjects[projectType].map((project: ProjectProps, index: number) => (
-                <Project key={index} {...project} />
+    <div>
+      <Filters filter={filter} setFilter={setFilter} />
+
+      <div className="mt-2 flex justify-center font-(family-name:--font-geist-sans)">
+        <div className="mb-24 flex flex-col px-3 md:px-12 lg:w-3/4">
+          <div className="flex flex-row flex-wrap justify-center gap-6 px-6 py-2 xl:grid-cols-3 md:grid-cols-2">
+            <AnimatePresence mode="popLayout">
+              {filteredProjects.map((projectType) => (
+                <motion.div
+                  key={projectType.title}
+                  layout
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.25, ease: 'easeOut' }}
+                >
+                  <Project {...projectType} />
+                </motion.div>
               ))}
-            </div>
+            </AnimatePresence>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   )

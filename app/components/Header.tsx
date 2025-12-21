@@ -39,7 +39,7 @@ function Socials() {
 export default function Header() {
   const pathname = usePathname()
   return (
-    <div className="min-w-screen mb-4 min-h-40 shadow-2xl dark:bg-[#1d2539]">
+    <div className="min-w-screen mb-4 min-h-40 shadow-2xl bg-[#1d2539]">
       <div className="flex justify-center p-2 min-h-40">
         <div className="flex items-center">
           {/* <div className="animate-border rounded-full bg-[radial-gradient(ellipse_at_right,var(--tw-gradient-stops))] from-sky-400 to-indigo-900 bg-size-[400%_400%] p-1 shadow-xl transition [animation-duration:4s] dark:shadow-gray-700/25">
