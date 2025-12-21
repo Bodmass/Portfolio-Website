@@ -29,8 +29,7 @@ const Project: NextPage<ProjectProps> = (props: ProjectProps) => {
       href={props.page}
       aria-label={`View project: ${props.title}`}
       className="
-        group flex w-150 -skew-x-12 select-none
-        flex-col rounded-3xl bg-black/25 hover:drop-shadow-2xl transition-shadow"
+        group flex w-[90vw] lg:w-150 -skew-x-12 select-none flex-col rounded-3xl bg-black/25 hover:drop-shadow-2xl transition-shadow"
     >
       <motion.div
         className="relative overflow-hidden rounded-3xl  group-hover: ring-blue-400 group-hover:ring-4 "
