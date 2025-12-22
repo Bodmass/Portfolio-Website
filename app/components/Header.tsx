@@ -5,6 +5,7 @@ import { faBluesky, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icon
 import Link from 'next/link'
 import styles from './Header.module.css'
 import { usePathname } from 'next/navigation'
+import path from 'path'
 
 function Socials() {
   type SocialIconProps = {
@@ -42,9 +43,6 @@ export default function Header() {
     <div className="min-w-screen mb-4 min-h-40 shadow-2xl bg-[#1d2539]">
       <div className="flex justify-center p-2 min-h-40">
         <div className="flex items-center">
-          {/* <div className="animate-border rounded-full bg-[radial-gradient(ellipse_at_right,var(--tw-gradient-stops))] from-sky-400 to-indigo-900 bg-size-[400%_400%] p-1 shadow-xl transition [animation-duration:4s] dark:shadow-gray-700/25">
-            <img className="h-36 w-36 rounded-full object-cover" src="/me-2.jpg" />
-          </div> */}
           <div className="flex flex-col px-4 text-center ">
             <span className="select-none text-nowrap bg-linear-to-b from-blue-500 to-blue-600 bg-clip-text font-delius text-7xl font-bold text-transparent dark:from-blue-400 dark:to-blue-500">
               Aziz Arar
@@ -57,20 +55,15 @@ export default function Header() {
       </div>
       <div className="pb-2">
         <nav className="flex justify-center space-x-4">
-          <Link
-            href="/"
-            className={pathname == '/' ? styles.current : styles.link}
-            //className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-            aria-current="page"
-          >
+          <Link href="/" className={pathname == '/' ? styles.current : styles.link} aria-current="page">
             Projects
           </Link>
-          <Link
-            id="about"
-            href="/about"
-            className={pathname == '/about' ? styles.current : styles.link}
-            //className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav:bg-gray-900"
-          >
+          {pathname != '/' && pathname != '/about' ? (
+            <Link id="current" href="" className={styles.current}>
+              /{pathname.split('/')[pathname.split('/').length - 1].toUpperCase()}
+            </Link>
+          ) : null}
+          <Link id="about" href="/about" className={pathname == '/about' ? styles.current : styles.link}>
             About Me
           </Link>
         </nav>

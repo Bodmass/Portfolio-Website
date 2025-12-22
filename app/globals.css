@@ -68,4 +68,14 @@ body {
   color: var(--foreground);
   background: linear-gradient(180deg, var(--background) 0%, var(--background-gradient) 100%);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+li {
+  margin-left: 2rem;
+  list-style-type: circle;
 }

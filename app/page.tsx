@@ -32,7 +32,7 @@ const Project: NextPage<ProjectProps> = (props: ProjectProps) => {
         group flex w-[90vw] lg:w-150 -skew-x-12 select-none flex-col rounded-3xl bg-black/25 hover:drop-shadow-2xl transition-shadow"
     >
       <motion.div
-        className="relative overflow-hidden rounded-3xl  group-hover: ring-blue-400 group-hover:ring-4 "
+        className="p-2 relative overflow-hidden rounded-3xl  group-hover: ring-blue-400 group-hover:ring-4 "
         whileHover={!shouldReduceMotion ? { y: -8 } : undefined}
         whileFocus={!shouldReduceMotion ? { y: -8 } : undefined}
         transition={{
@@ -93,7 +93,7 @@ const Filters = ({ filter, setFilter }: { filter: string; setFilter: Dispatch<Se
   function FilterIcon({ children, filterName: filterName }: FilterIconProps) {
     return (
       <div
-        className={`${filterName == filter ? `bg-[#293451]` : `bg-transparent`} inline-flex select-none rounded-2xl m-2 font-roboto h-8 min-w-10 items-center p-2.5 text-center text-md font-medium hover:bg-blue-400 hover:text-white focus:outline-hidden cursor-pointer focus:ring-4 focus:ring-blue-300 dark:border-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800`}
+        className={`${filterName == filter ? `bg-[#51a2ff]` : `bg-transparent`} inline-flex select-none rounded-2xl m-2 font-roboto h-8 min-w-10 items-center p-2.5 text-center text-md font-medium hover:bg-blue-400 hover:text-white focus:outline-hidden cursor-pointer focus:ring-4 active:scale-90 focus:ring-blue-300 dark:border-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800`}
       >
         <a onClick={() => setFilter(filterName)}> {children} </a>
       </div>
@@ -136,8 +136,8 @@ export default function Home() {
       <Filters filter={filter} setFilter={setFilter} />
 
       <div className="mt-2 flex justify-center font-(family-name:--font-geist-sans)">
-        <div className="mb-24 flex flex-col px-3 md:px-12 lg:w-3/4">
-          <div className="flex flex-row flex-wrap justify-center gap-6 px-6 py-2 xl:grid-cols-3 md:grid-cols-2">
+        <div className="mb-24 flex flex-col  lg:w-3/4">
+          <div className="flex flex-row flex-wrap justify-center gap-6 py-2 xl:grid-cols-3 md:grid-cols-2">
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((projectType) => (
                 <motion.div

@@ -8,7 +8,7 @@ export interface ProjectProps {
   bgCol?: string
   techstack: string[]
   status: 'released' | 'on-going' | 'hold' | 'development' | 'abandoned'
-  type: 'Game' | 'Web App' | 'Game Jam'
+  type: 'Game' | 'Web App' | 'Game Jam' | 'Game Tools'
 }
 
 export const statusLabels: { [key in ProjectProps['status']]: string } = {
@@ -79,5 +79,14 @@ export const PROJECTS: ProjectProps[] = [
     techstack: ['Unity', 'Game Jam', 'Ludum Dare 45'],
     status: 'released',
     type: 'Game Jam',
+  },
+  {
+    page: '/projects/hapivania',
+    title: 'HAPIVANIA GAME ENGINE',
+    bgCol: '#000',
+    logo: '/projects/hapivania/hapivania_logo.png',
+    techstack: ['C++', 'Game Engine'],
+    status: 'released',
+    type: 'Game Tools',
   },
 ]
