@@ -1,3 +1,9 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Aziz Arar | About',
+}
+
 export default function About() {
   return (
     <div className="w-full">

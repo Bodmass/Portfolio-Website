@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Aziz | Gourvid',
+  title: 'Aziz Arar | Gourvid',
 }
 
 export default function Page() {

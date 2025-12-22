@@ -42,7 +42,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'Aziz Arar',
-  description: 'Aziz Arar',
+  description: "Aziz Arar's Portfolio Site",
 }
 
 export default function RootLayout({

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Aziz | SFML Snake',
+  title: 'Aziz Arar | SFML Snake',
 }
 
 export default function Page() {
