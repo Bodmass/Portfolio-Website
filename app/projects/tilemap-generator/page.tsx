@@ -12,7 +12,7 @@ export default function Page() {
         <Image src="/projects/tilemap-generator/SplitLogo.png" width={500} height={100} alt="Snake logo" />
       </div>
       <div className="w-full flex justify-center">
-        <div className="w-full xl:w-2/3 m-2 wrap-break-word whitespace-normal text-left">
+        <div className="w-full xl:w-2/3 m-2 wrap-break-word whitespace-normal text-left max-w-360">
           <span>Tilemap Generator</span>
           <ul>
             <li>C#</li>

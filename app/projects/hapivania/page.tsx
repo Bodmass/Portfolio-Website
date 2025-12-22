@@ -12,7 +12,7 @@ export default function Page() {
         <Image src="/projects/hapivania/hapivania_logo.png" width={500} height={100} alt="HAPIvania logo" />
       </div>
       <div className="w-full flex justify-center">
-        <div className="w-full xl:w-2/3 m-2 wrap-break-word whitespace-normal text-left">
+        <div className="w-full xl:w-2/3 m-2 wrap-break-word whitespace-normal text-left max-w-360">
           <span>AzEngine (HAPIVANIA ENGINE AND GAME):</span>
           <ul>
             <li>C++</li>

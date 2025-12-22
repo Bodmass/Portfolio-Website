@@ -20,7 +20,7 @@ export default function About() {
         </div>
       </div>
       <div className="w-full flex justify-center">
-        <div className="w-full xl:w-2/3 m-2 wrap-break-word whitespace-normal text-left">
+        <div className="w-full xl:w-2/3 m-2 wrap-break-word whitespace-normal text-left max-w-360">
           <p>
             I focus primarily on programming, at the moment mostly in Javascript (for Web) and using GDScript in the
             Godot Game Engine.
