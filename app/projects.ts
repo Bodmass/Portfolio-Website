@@ -8,7 +8,7 @@ export interface ProjectProps {
   bgCol?: string
   techstack: string[]
   status: 'released' | 'on-going' | 'hold' | 'development' | 'abandoned'
-  type: 'Game' | 'Web App' | 'Game Jam' | 'Game Tool'
+  type: 'Game' | 'Web' | 'Game Jam' | 'Game Tool'
 }
 
 export const statusLabels: { [key in ProjectProps['status']]: string } = {
@@ -21,7 +21,7 @@ export const statusLabels: { [key in ProjectProps['status']]: string } = {
 
 export const typeLabels: { [key in ProjectProps['type']]: string } = {
   Game: 'Games',
-  'Web App': 'Web Apps',
+  Web: 'Web',
   'Game Jam': 'Game Jams',
   'Game Tool': 'Game Tools',
 }
@@ -31,19 +31,19 @@ export const PROJECTS: ProjectProps[] = [
     page: 'https://ffxiv.azizarar.com',
     title: 'Stone Sky Sea DPS Calculator',
     logo: '/projects/ffxiv-sss/ssslogo.png',
-    techstack: ['Next.js', 'Typescript'],
+    techstack: ['Typescript', 'Javascript', 'Next.js'],
     bgCol: '#000000',
     status: 'on-going',
-    type: 'Web App',
+    type: 'Web',
   },
   {
     page: 'https://blu.azizarar.com',
     title: 'BLU Spellbook',
     logo: '/projects/ffxiv-blu/blulogo.png',
-    techstack: ['Next.js', 'Typescript'],
+    techstack: ['Typescript', 'Javascript', 'Next.js'],
     bgCol: '#000000',
     status: 'hold',
-    type: 'Web App',
+    type: 'Web',
   },
   {
     page: 'https://bodmassad.itch.io/ld50',
@@ -59,7 +59,7 @@ export const PROJECTS: ProjectProps[] = [
     title: 'Dreamscape',
     logo: '/projects/dreamscape/dreamscape_logo.png',
     bgCol: '#ffffff',
-    techstack: ['Unity', 'Game Jam', 'Ludum Dare 48'],
+    techstack: ['C#', 'Unity', 'Game Jam', 'Ludum Dare 48'],
     status: 'released',
     type: 'Game Jam',
   },
@@ -68,16 +68,16 @@ export const PROJECTS: ProjectProps[] = [
     title: 'Guildy',
     bgImg: '/projects/guildy/bastion_bg.jpg',
     logo: '/projects/guildy/guildyLogo.png',
-    techstack: ['Next.js', 'Typescript'],
+    techstack: ['Typescript', 'Javascript', 'Next.js'],
     status: 'hold',
-    type: 'Web App',
+    type: 'Web',
   },
   {
     page: 'https://bodmassad.itch.io/ld45',
     title: 'Brainwave',
     bgImg: '/projects/brainwave/bw_bg.jpg',
     logo: '/projects/brainwave/ld45_logo.png',
-    techstack: ['Unity', 'Game Jam', 'Ludum Dare 45'],
+    techstack: ['C#', 'Unity', 'Game Jam', 'Ludum Dare 45'],
     status: 'released',
     type: 'Game Jam',
   },
@@ -86,7 +86,34 @@ export const PROJECTS: ProjectProps[] = [
     title: 'HAPIvania Game Engine & Level Editor',
     bgCol: '#000',
     logo: '/projects/hapivania/hapivania_logo.png',
-    techstack: ['C++', 'Game Engine', 'C#', 'Level Editor'],
+    techstack: ['C++', 'Game Engine', 'C#', '.NET', 'Level Editor'],
+    status: 'released',
+    type: 'Game Tool',
+  },
+  {
+    page: '/projects/gourvid',
+    title: 'Gourvid',
+    bgCol: '#000',
+    logo: '/projects/gourvid/gourvid-logo.png',
+    techstack: ['Wordpress', 'PHP'],
+    status: 'released',
+    type: 'Web',
+  },
+  {
+    page: '/projects/snake',
+    title: 'SFML Snake',
+    bgCol: '#000',
+    logo: '/projects/snake/snakelogo.png',
+    techstack: ['C++', 'SFML'],
+    status: 'released',
+    type: 'Game',
+  },
+  {
+    page: '/projects/tilemap-generator',
+    title: 'Tilemap Generator',
+    bgImg: '/projects/tilemap-generator/SplitLogo.png',
+    logo: '/projects/blank.png',
+    techstack: ['C#', 'Plugin', 'Unity'],
     status: 'released',
     type: 'Game Tool',
   },

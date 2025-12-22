@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center shadow-xl">
         <Image src="/projects/hapivania/hapivania_logo.png" width={500} height={100} alt="HAPIvania logo" />
       </div>
       <div className="w-full flex justify-center">

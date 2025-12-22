@@ -12,12 +12,20 @@ import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 const Project: NextPage<ProjectProps> = (props: ProjectProps) => {
   function getColours(tech: string) {
     switch (tech) {
+      case 'C++':
+        return 'bg-[#6399d7]  text-white'
       case 'Next.js':
-        return 'bg-purple-600  text-white'
+        return 'bg-black  text-white'
       case 'Typescript':
         return 'bg-[#3178C6] text-white'
+      case 'Javascript':
+        return 'bg-[#efd71b] text-black'
       case 'Godot':
         return 'bg-[#5789ba] text-white'
+      case 'C#':
+        return 'bg-[#662079] text-white'
+      case '.NET':
+        return 'bg-[#9580e5] text-black'
       default:
         return 'dark:bg-white dark:text-black bg-black text-white'
     }
@@ -54,7 +62,7 @@ const Project: NextPage<ProjectProps> = (props: ProjectProps) => {
 
         <div className="relative px-2 py-1">
           <div className="skew-x-12 pl-6">
-            <p className="font-teko text-3xl sm:text-2xl text-white">{props.title}</p>
+            <p className="font-teko md:text-2xl text-xl text-white">{props.title}</p>
           </div>
 
           <div className="relative w-full h-32 select-none ">
@@ -122,14 +130,6 @@ const Filters = ({ filter, setFilter }: { filter: string; setFilter: Dispatch<Se
 }
 
 export default function Home() {
-  const groupedProjects = PROJECTS.reduce((acc: any, project: ProjectProps) => {
-    if (!acc[project['type']]) {
-      acc[project['type']] = []
-    }
-    acc[project['type']].push(project)
-    return acc
-  }, {})
-
   const [filter, setFilter] = useState('')
   const filteredProjects = PROJECTS.filter((project) => project.type.toUpperCase().includes(filter))
 
@@ -145,10 +145,10 @@ export default function Home() {
                 <motion.div
                   key={projectType.title}
                   layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.25, ease: 'easeOut' }}
+                  initial={{ y: 25, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: 25, opacity: 0 }}
+                  transition={{ duration: 0.5, ease: 'easeOut' }}
                 >
                   <Project {...projectType} />
                 </motion.div>
