@@ -83,10 +83,10 @@ export const PROJECTS: ProjectProps[] = [
   },
   {
     page: '/projects/hapivania',
-    title: 'HAPIVANIA GAME ENGINE',
+    title: 'HAPIvania Game Engine & Level Editor',
     bgCol: '#000',
     logo: '/projects/hapivania/hapivania_logo.png',
-    techstack: ['C++', 'Game Engine'],
+    techstack: ['C++', 'Game Engine', 'C#', 'Level Editor'],
     status: 'released',
     type: 'Game Tool',
   },

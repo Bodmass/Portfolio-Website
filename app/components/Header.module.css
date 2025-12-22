@@ -1,18 +1,18 @@
 .link,
 .current {
-  border-radius: 12px;
   color: #fff;
-  padding: 5px 16px;
-  background-color: #0f131f00;
+  padding: 10px 24px;
+  background-color: #0b0e1600;
   transition: background-color 200ms linear;
+  text-transform: uppercase;
 }
 
 /* Apply to the current/active nav item */
 .current {
-  background-color: #0f131f;
+  background-color: #1d2538;
   color: #fff;
 }
 
 .link:hover {
-  background-color: #0f131f83;
+  background-color: #39486b;
 }

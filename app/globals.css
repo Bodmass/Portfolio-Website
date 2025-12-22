@@ -7,6 +7,7 @@
   --font-delius: var(--font-delius-swash);
   --font-teko: var(--font-teko);
   --font-roboto: var(--font-roboto);
+  --font-sharetechmono: var(--font-share-tech-mono);
 
   --animate-border: background ease infinite;
 
@@ -69,6 +70,7 @@ body {
   background: linear-gradient(180deg, var(--background) 0%, var(--background-gradient) 100%);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5rem;
+  overflow-y: scroll;
 }
 
 p {
