@@ -1,0 +1,18 @@
+.link,
+.current {
+  color: #fff;
+  padding: 10px 24px;
+  background-color: #0b0e1600;
+  transition: background-color 200ms linear;
+  text-transform: uppercase;
+}
+
+/* Apply to the current/active nav item */
+.current {
+  background-color: #1d2538;
+  color: #fff;
+}
+
+.link:hover {
+  background-color: #39486b;
+}
